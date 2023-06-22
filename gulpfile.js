@@ -10,14 +10,14 @@ const htmlmin = require('gulp-htmlmin');
 gulp.task('server', function () {
 
 	browserSync({
-		server: {
-			baseDir: "public_html",
-		}
+		proxy: "kitchen"
 	});
 
 
 
 	gulp.watch("src/*.html").on('change', browserSync.reload);
+	gulp.watch("src/**/*.php").on('change', browserSync.reload);
+	gulp.watch("public_html/**/*.php").on('change', browserSync.reload);
 });
 
 gulp.task('styles', function () {
@@ -36,9 +36,6 @@ gulp.task('styles', function () {
 		.pipe(gulp.dest("public_html/css"))
 		.pipe(browserSync.stream());
 });
-
-
-
 
 gulp.task('watch', function () {
 	gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel('styles'));
