@@ -4,7 +4,8 @@ module.exports = {
 		"stylelint-prettier/recommended"
 	],
 	plugins: ["stylelint-order", "stylelint-scss", "stylelint-no-unresolved-module"],
-	rules: {	
+	rules: {
+		"media-feature-range-notation": "prefix",
 		order: ["custom-properties",
 			"declarations"
 		],
@@ -17,5 +18,6 @@ module.exports = {
 			},
 			"modules": ["node_modules", "local_modules"]
 		}
-	}
+	},
+	
 };
