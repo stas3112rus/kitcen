@@ -1,16 +1,13 @@
 @font-face {
-  font-family: SFUIDisplay;
-  src: "../font/regular.tf"); /* IE9 Compat Modes */
-}
-
+       font-family: 'SFUIDisplay';
+   	   src: url('../font/regular.ttf'); /* IE9 Compat Modes */
+  }
 @font-face {
-  font-family: SFUIDisplayBold;
-  src: "../font/font.ttf"; /* IE9 Compat Modes */
-}
+       font-family: 'SFUIDisplayBold';
+   	   src: url('../font/font.ttf'); /* IE9 Compat Modes */
+  }
 
-@import "../components/Header/Header";
-@import "../components/Navbar/Navbar";
-@import "../components/MainScreen/MainScreen";
+
 
 body {
   overflow-x: hidden;
@@ -18,3 +15,8 @@ body {
   font-size: 14px;
   font-family: SFUIDisplay;
 }
+
+@import "../components/Header/Header";
+@import "../components/Navbar/Navbar";
+@import "../components/MainScreen/MainScreen";
+@import "../components/PopularCategories/PopularCategories";

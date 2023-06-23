@@ -22,6 +22,7 @@ drawHead();
 	drawTopComponent();
 	drawNavBar();
 	drawMainScreen();
+	drawPopularCategories();
 	?>
 </body>
 

@@ -1,0 +1,39 @@
+.header {
+  text-align: center;
+}
+.header-about {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+.header-time {
+  margin-top: 5px;
+  margin-left: 100px;
+  font-size: 101px;
+}
+.header-phone {
+  color: #000154;
+  font-weight: 800;
+}
+.header-contact {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #eb3636;
+  border-radius: 5px;
+}
+.header-contact:hover {
+  background: #db5f5f;
+}
+.header-link {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .header-contact {
+    padding: 10px 8px;
+  }
+}

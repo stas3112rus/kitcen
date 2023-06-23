@@ -10,6 +10,17 @@ function getCategoriesChildren()
     return getAllRowsFromDataBase($sql);
 }
 
+function getPopularCategoriesChildren($limit)
+{
+    $sql = "SELECT 
+    *
+    FROM `categories_children`
+    ORDER BY rating DESC LIMIT 0, $limit
+    ";
+
+    return getAllRowsFromDataBase($sql);
+}
+
 
 function addCategoriesChildrenFromOldCategory($category)
 {
