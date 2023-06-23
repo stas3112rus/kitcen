@@ -17,7 +17,18 @@
 		"gulp-htmlmin": "^5.0.1",
 		"gulp-imagemin": "^6.2.0",
 		"gulp-rename": "^1.4.0",
-		"gulp-sass": "^4.1.1"
+		"gulp-sass": "^4.1.1",
+		"prettier": "^2.8.8",
+		"stylelint": "^15.9.0",
+		"stylelint-config-prettier": "^9.0.5",
+		"stylelint-config-rational-order": "^0.1.2",
+		"stylelint-config-standard": "^33.0.0",
+		"stylelint-order": "^6.0.3",
+		"stylelint-prettier": "^3.0.0",
+		"stylelint-scss": "^5.0.1"
+	},
+	"rules": {
+		"order/properties-alphabetical-order": true
 	},
 	"browserslist": [
 		"last 1 version",
