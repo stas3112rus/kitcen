@@ -10,7 +10,7 @@ function drawHead()
 		<link rel="apple-touch-icon" href="image/favicon.png" />
 		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 		<title><? echo $CATEGORY['title'] ?></title>
-		<meta name="description" content="<? echo $TXT['main_title'] ?>">
+		<meta name="description" content="<? echo $TXT['description'] ?>">
 
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>

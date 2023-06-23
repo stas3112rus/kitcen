@@ -1,9 +1,11 @@
 <?
 function getTXT()
 {
+    global $TEXT_TYPE;
+
     $result = [];    
 
-    foreach (getAllTexts() as $text) {
+    foreach (getGlobalTextsAndTypeText($TEXT_TYPE) as $text) {
         $result[$text['name']] =  upgradeTextLine($text['value']);
     }
 

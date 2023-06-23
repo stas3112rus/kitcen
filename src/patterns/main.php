@@ -1,10 +1,12 @@
 <?
 
 include("$GLOBAL_PATH/src/data/mysql.php");
-include("$GLOBAL_PATH/src/globals/global-data.php");
 include("$GLOBAL_PATH/src/components/main.php");
 
+$TEXT_TYPE = 2; // main
 $CATEGORY = getCategoriesParentsByFolder('main');
+
+include("$GLOBAL_PATH/src/globals/global-data.php");
 
 ?>
 
@@ -12,13 +14,13 @@ $CATEGORY = getCategoriesParentsByFolder('main');
 <html lang="en">
 
 <?
-	drawHead();
+drawHead();
 ?>
 
 <body>
 	<?
-		print_r($DEPARTMENT);
-		print_r($TXT);
+
+	print_r($TXT);
 	?>
 </body>
 

@@ -1,3 +1,3 @@
 <?
 	include('./info.php');
-	include("$GLOBAL_PATH/src/pages/main.php");
+	include("$GLOBAL_PATH/src/patterns/main.php");
