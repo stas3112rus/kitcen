@@ -21,6 +21,7 @@ drawHead();
 	<?
 	drawTopComponent();
 	drawNavBar();
+	drawMainScreen();
 	?>
 </body>
 
