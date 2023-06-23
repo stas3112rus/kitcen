@@ -20,6 +20,7 @@ drawHead();
 <body>
 	<?
 	drawTopComponent();
+	drawNavBar();
 	?>
 </body>
 

@@ -11,8 +11,7 @@ function drawTopComponent()
 				</a>
 			</div>
 			<div class="col-lg-5 header-about">
-				<div class="line">
-				</div>
+				
 				<? echo $TXT['header_slogan'] ?>
 			</div>
 			<div class="col-lg-3 phone">
