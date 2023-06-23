@@ -1,0 +1,53 @@
+.advantage {
+  background: url("../image/anetta.png") no-repeat;
+  background-size: cover;
+  height: 50%;
+  margin-top: 80px;
+  margin-left: -15px;
+  margin-right: -8px;
+  padding-top: 150px;
+  padding-bottom: 140px;
+  color: #000154;
+}
+.advantage-title {
+  margin: 0 auto;
+}
+.advantage-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.advantage-block {
+  flex: 1 1 calc(33.33% - 30px);
+  margin: 8px;
+  background: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  min-width: 170px;
+  padding: 10px 20px;
+  padding-top: 40px;
+}
+.advantage-itemTitle {
+  margin-top: 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4a689a;
+}
+.advantage-itemSubtitle {
+  color: #495660;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 770px) {
+  .advantage-block {
+    display: block;
+    margin: 20px;
+  }
+  .advantage-blocks {
+    display: block;
+  }
+}

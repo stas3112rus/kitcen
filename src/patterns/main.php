@@ -23,6 +23,7 @@ drawHead();
 	drawNavBar();
 	drawMainScreen();
 	drawPopularCategories();
+	drawAdvantages();
 	?>
 </body>
 

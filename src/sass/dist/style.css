@@ -165,12 +165,12 @@ body {
   }
 }
 .popularCategories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
   margin-top: 91px;
   font-size: 15px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
 }
 .popularCategories h3 {
   color: #4a689a;
@@ -180,16 +180,16 @@ body {
   text-decoration: none;
 }
 .popularCategories_item {
-  min-width: 150px;
   display: flex;
   flex-basis: 20%;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  min-width: 150px;
   margin: 10px;
   padding: 20px;
-  background: #bbecfa;
   color: #5c5a5a;
   text-align: center;
+  background: #bbecfa;
 }
 .popularCategories_item:hover {
   background: #29b3d9;
