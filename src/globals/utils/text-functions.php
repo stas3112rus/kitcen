@@ -14,8 +14,6 @@ function getTXT()
 
 function upgradeTextLine($textLine)
 {
-    global $DEFAULT;
-
     $textLine = replacePadeg($textLine);
    
     //$textLine = str_replace("[phone]", getFullPhone(), $textLine);

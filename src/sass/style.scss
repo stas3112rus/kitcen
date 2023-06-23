@@ -1,5 +1,26 @@
-body{
-	background: red;
-	margin: 0;
-	padding: 0px;
+@font-face {
+       font-family: 'SFUIDisplay';
+   	   src: url('../font/regular.ttf'); /* IE9 Compat Modes */
+  }
+@font-face {
+       font-family: 'SFUIDisplayBold';
+   	   src: url('../font/font.ttf'); /* IE9 Compat Modes */
+  }
+
+@import "../components/Header/Header";
+
+body {
+	font-family: 'SFUIDisplay';
+  overflow-x: hidden; 
+	font-size:14px;
+	color:#495660;
+}
+
+.line{
+	background: #4a689a;
+	height: 34px;
+	width: 2px;
+	display: block;
+    position: absolute;
+    left: -5px;
 }

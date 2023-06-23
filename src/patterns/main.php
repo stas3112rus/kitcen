@@ -1,12 +1,12 @@
 <?
+$TEXT_TYPE = 2; // main
+$LEVEL = "";
 
 include("$GLOBAL_PATH/src/data/mysql.php");
 include("$GLOBAL_PATH/src/components/main.php");
-
-$TEXT_TYPE = 2; // main
-$CATEGORY = getCategoriesParentsByFolder('main');
-
 include("$GLOBAL_PATH/src/globals/global-data.php");
+
+$CATEGORY = getCategoriesParentsByFolder('main');
 
 ?>
 
@@ -19,8 +19,7 @@ drawHead();
 
 <body>
 	<?
-
-	print_r($TXT);
+	drawTopComponent();
 	?>
 </body>
 
