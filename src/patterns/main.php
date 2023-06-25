@@ -4,22 +4,28 @@ $LEVEL = "";
 
 include("$GLOBAL_PATH/src/data/mysql.php");
 include("$GLOBAL_PATH/src/components/main.php");
-include("$GLOBAL_PATH/src/globals/global-data.php");
+include("$GLOBAL_PATH/src/constants/main.php");
 
+include("$GLOBAL_PATH/src/utils/main.php");
+include('constants/main.constants.php');
+
+
+$DEPARTMENT = getDepartmentWithCityByID($DEPARTMENT_ID);
 $CATEGORY = getCategoriesParentsByFolder('main');
 
+$mainValues = getMainValues();
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <?
-drawHead();
+drawHead($mainValues['description']);
 ?>
 
 <body>
 	<?
-	drawTopComponent();
+	drawHeader();
 	drawNavBar();
 	drawMainScreen();
 	drawPopularCategories();

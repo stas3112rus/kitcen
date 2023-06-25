@@ -1,4 +1,6 @@
 <?
+include('constants/productBlock.constants.php');
+
 function drawProductBlock($page = 1, $perPage = 12)
 {
 	$sort = "rating";
@@ -27,16 +29,15 @@ function drawProductBlock($page = 1, $perPage = 12)
 
 function drawProductBlockTitles($sort)
 {
+	$productsValues = getProductBlockValues();
 ?>
 	<div class="ProductBlock-Titles">
 		<a href="?sort=hits" class="ProductBlock-Titles <? echo $sort !== "rating" ? "ProductBlock-Titles_active " : "" ?>">
-			Хиты продаж
+			<? echo $productsValues['hits'] ?>
 		</a>
-		<a href="?sort=prices" class="ProductBlock-Titles <? echo $sort !== "price" ? "ProductBlock-Titles_active " : "" ?>">
-			Дешевые кухни на заказ
+		<a href="?sort=price" class="ProductBlock-Titles <? echo $sort !== "price" ? "ProductBlock-Titles_active " : "" ?>">
+			<? echo $productsValues['price'] ?>
 		</a>
 	</div>
 <?
 }
-
-

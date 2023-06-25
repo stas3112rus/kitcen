@@ -3,7 +3,7 @@ include('constants/productItem.constants.php');
 
 function drawProductItem($product)
 {
-
+	$productValue = getProductItemValues($product)['img'];
 ?>
 	<li class="Product-wrapper">
 		<div class="Product-title">
@@ -15,7 +15,7 @@ function drawProductItem($product)
 		</div>
 		<div class="Product-photo">
 			<a href="<? echo getProductLink($product) ?>">
-				<img src="<? echo getProductImgLink($product) ?>" alt="<? echo getProductImgAlt($product) ?>" title="<? echo getProductImgAlt($product) ?>">
+				<img src="<? echo $productValue['imgLink'] ?>" alt="<? echo $productValue['imgAlt'] ?>" title="<? echo getProductImgAlt($product) ?>">
 			</a>
 		</div>
 		<div class="Product-info">

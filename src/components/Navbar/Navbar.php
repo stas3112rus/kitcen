@@ -3,7 +3,7 @@ include('constants/navbar.constants.php');
 
 function drawNavBar()
 {
-	global $LEVEL, $DEPARTMENT;
+	global $DEPARTMENT, $IMAGES;
 ?>
 	<div class="nav">
 		<div class="nav-links">
@@ -13,7 +13,7 @@ function drawNavBar()
 
 		</div>
 		<div class="nav-adress">
-			<img src="<? echo  $LEVEL ?>image/icons8-marker-32.png" style="width: 16px; height:16px;">
+			<img src="<? echo  $IMAGES['navIconPoint'] ?>" style="width: 16px; height:16px;">
 			<span style="color: white; padding-left: 15px;">
 				<? echo $DEPARTMENT['im'] ?>, <? echo $DEPARTMENT['street'] ?>
 				<br>
