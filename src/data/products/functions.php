@@ -10,6 +10,22 @@ function getAllProducts()
     return getAllRowsFromDataBase($sql);
 }
 
+function getProductsByParams($page, $perPage, $sort, $order)
+{
+    $limit = getLimit($page, $perPage);
+    $order = getOrder($sort, $order);
+
+    $sql = "SELECT 
+    *
+    FROM `products`
+    $order
+    $limit
+    ";
+
+
+    return getAllRowsFromDataBase($sql);
+}
+
 
 function addProductFromOldProduct($product)
 {

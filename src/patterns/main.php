@@ -24,6 +24,7 @@ drawHead();
 	drawMainScreen();
 	drawPopularCategories();
 	drawAdvantages();
+	drawProductBlock();
 	?>
 </body>
 

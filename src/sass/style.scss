@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
   color: #495660;
   font-size: 14px;
-  font-family: SFUIDisplay;
+  font-family: 'SFUIDisplay';
 }
 
 @import "../components/Header/Header";
@@ -23,3 +23,5 @@ body {
 @import "../components/MainScreen/MainScreen";
 @import "../components/PopularCategories/PopularCategories";
 @import "../components/Advantages/Advantages";
+@import "../components/ProductsBlock/ProductBlock";
+@import "../components/ProductItem/ProductItem";

@@ -55,3 +55,13 @@ function emptyStringToNull($values)
 
 	return $result;
 }
+
+function getOrder($sort, $order){
+	return trim("ORDER BY $sort $order");
+}
+
+function getLimit($page, $perPage){
+	$paramOne = ($page - 1) * $perPage;
+	$paramTwo = $perPage;
+	return "LIMIT $paramOne, $paramTwo";
+}
