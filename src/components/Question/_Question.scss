@@ -1,0 +1,21 @@
+.Question {
+  background: url("../image/font-que.png") no-repeat;
+  background-size: cover;
+  height: 50%;
+  margin-top: 50px;
+  margin-left: -15px;
+  margin-right: -8px;
+  padding-top: 40px;
+  padding-bottom: 140px;
+  color: #000154;
+
+  & h3 {
+    font-size: 200%;
+    color: white;
+  }
+
+  &-text {
+    font-size: 15px;
+    font-family: SFUIDisplayBold;
+  }
+}

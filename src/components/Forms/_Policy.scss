@@ -1,0 +1,17 @@
+.Policy {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  color: #050859;
+  font-weight: 700;
+
+  & a {
+    color: #fff;
+  }
+
+  &-policyText {
+    z-index: 9999;
+    margin-left: 15px;
+  }
+}

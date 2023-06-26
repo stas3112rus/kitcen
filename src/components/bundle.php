@@ -11,5 +11,8 @@ include('Support/Support.php');
 include('Steps/Steps.php');
 include('Guarantees/Guarantees.php');
 include('Difference/Difference.php');
+include('Question/Question.php');
+include('Forms/bundle.php');
+
 
 
