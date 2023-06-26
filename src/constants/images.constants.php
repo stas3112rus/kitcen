@@ -5,5 +5,6 @@ $IMAGES = [
 	"viber" =>  "$LEVEL/image/viber-logo.png",
 	"whatsapp" => "$LEVEL/image/whatsapp-logo.png",
 	"navIconPoint" => "$LEVEL/image/icons8-marker-32.png",
+	"man" => "$LEVEL/image/man.png",
+	"popup" => "$LEVEL/image/popup.png",
 ];
-

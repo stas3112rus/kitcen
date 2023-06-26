@@ -13,14 +13,14 @@ include('constants/main.constants.php');
 $DEPARTMENT = getDepartmentWithCityByID($DEPARTMENT_ID);
 $CATEGORY = getCategoriesParentsByFolder('main');
 
-$mainValues = getMainValues();
+$VALUES = getMainValues();
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <?
-drawHead($mainValues['description']);
+drawHead($VALUES['description']);
 ?>
 
 <body>
@@ -31,6 +31,7 @@ drawHead($mainValues['description']);
 	drawPopularCategories();
 	drawAdvantages();
 	drawProductBlock();
+	drawSupport();
 	?>
 </body>
 

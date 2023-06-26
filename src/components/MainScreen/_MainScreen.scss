@@ -39,9 +39,13 @@
       font-size: 14px;
       text-transform: uppercase;
       text-decoration: none;
-      // background-color: rgb(235 54 54);
+      background-color: #f21010;
       border-radius: 5px;
-      // box-shadow: 0 4px 9px 1px rgb(235 54 54 / 35%);
+      box-shadow: 0 4px 9px 1px #783636;
+
+      &:hover {
+        background-color: #ef5c5c;
+      }
     }
   }
 

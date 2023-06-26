@@ -7,5 +7,6 @@ include('PopularCategories/PopularCategories.php');
 include('Advantages/Advantages.php');
 include('ProductsBlock/ProductsBlock.php');
 include('ProductItem/ProductItem.php');
+include('Support/Support.php');
 
 
