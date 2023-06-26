@@ -31,11 +31,12 @@ drawHead($VALUES['description']);
 	// drawPopularCategories();
 	// drawAdvantages();
 	// drawProductBlock();
-	drawSupport();
+	// drawSupport();
 	// drawSteps();
-	drawGuarantees();
-	drawDifference();
-	drawQuestion();
+	// drawGuarantees();
+	// drawDifference();
+	// drawQuestion();
+	drawContacts();
 	?>
 </body>
 

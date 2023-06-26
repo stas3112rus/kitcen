@@ -13,6 +13,7 @@ include('Guarantees/Guarantees.php');
 include('Difference/Difference.php');
 include('Question/Question.php');
 include('Forms/bundle.php');
+include('Contacts/Contacts.php');
 
 
 

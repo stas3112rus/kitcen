@@ -7,4 +7,5 @@ $IMAGES = [
 	"navIconPoint" => "$LEVEL/image/icons8-marker-32.png",
 	"man" => "$LEVEL/image/man.png",
 	"popup" => "$LEVEL/image/popup.png",
+	"mapIcon" => "$LEVEL/image/map-icon.png",
 ];
