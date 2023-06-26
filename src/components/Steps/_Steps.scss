@@ -1,12 +1,12 @@
 .Steps {
-  background: url("../image/anetta.png") no-repeat;
-  background-size: cover;
   height: 50%;
-  margin-left: -15px;
   margin-right: -8px;
+  margin-left: -15px;
   padding-top: 150px;
   padding-bottom: 141px;
   color: #000154;
+  background: url("../image/anetta.png") no-repeat;
+  background-size: cover;
 
   h3 {
     font-size: 200%;
@@ -15,28 +15,28 @@
 
 .StepsList {
   &-item {
-    margin-top: 60px;
     display: flex;
-    background: #fff;
+    margin-top: 60px;
+    margin-left: 20px;
     padding: 20px;
     color: #222;
+    background: #fff;
     border-radius: 3px;
-    margin-left: 20px;
   }
 
   &-number {
-    text-transform: uppercase;
-    font-size: 70px;
-    line-height: 44px;
-    font-family: SFUIDisplayBold;
-    color: #c4c2bf;
     padding-right: 30px;
+    color: #c4c2bf;
+    font-size: 70px;
+    font-family: SFUIDisplayBold;
+    line-height: 44px;
+    text-transform: uppercase;
   }
 
   &-info {
+    padding-left: 15px;
     color: #4a689a;
     font-size: 15px;
-    padding-left: 15px;
 
     & strong {
       font-size: 16px;

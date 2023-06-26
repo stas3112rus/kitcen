@@ -26,13 +26,14 @@ drawHead($VALUES['description']);
 <body>
 	<?
 	drawHeader();
-	drawNavBar();
-	drawMainScreen();
-	drawPopularCategories();
-	drawAdvantages();
-	drawProductBlock();
-	drawSupport();
-	drawSteps();
+	// drawNavBar();
+	// drawMainScreen();
+	// drawPopularCategories();
+	// drawAdvantages();
+	// drawProductBlock();
+	// drawSupport();
+	// drawSteps();
+	drawGuarantees();
 	?>
 </body>
 
