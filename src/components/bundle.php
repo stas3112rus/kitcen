@@ -10,5 +10,6 @@ include('ProductItem/ProductItem.php');
 include('Support/Support.php');
 include('Steps/Steps.php');
 include('Guarantees/Guarantees.php');
+include('Difference/Difference.php');
 
 

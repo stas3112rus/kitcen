@@ -6,15 +6,15 @@
   }
 
   &-Block {
-    text-align: center;
     line-height: 19px;
+    text-align: center;
 
     & strong {
       display: block;
-      font-size: 15px;
-      font-weight: 700;
-      color: #4a689a;
       margin: 25px 0;
+      color: #4a689a;
+      font-weight: 700;
+      font-size: 15px;
     }
 
     & p {

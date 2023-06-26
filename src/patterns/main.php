@@ -34,6 +34,7 @@ drawHead($VALUES['description']);
 	// drawSupport();
 	// drawSteps();
 	drawGuarantees();
+	drawDifference();
 	?>
 </body>
 

@@ -1,0 +1,33 @@
+.Difference {
+  background: url("../image/dest.png") no-repeat;
+  background-size: cover;
+  height: 50%;
+  margin-top: 50px;
+  margin-left: -15px;
+  margin-right: -8px;
+  padding-top: 150px;
+  padding-bottom: 140px;
+  color: #000154;
+
+  & h3 {
+    font-size: 200%;
+  }
+
+  &-number {
+    font-family: SFUIDisplayBold;
+    font-size: 57px;
+    margin-right: 20px;
+    color: #495560;
+  }
+
+  &-block {
+    display: flex;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Difference {
+    padding-top: 25px;
+  }
+}
