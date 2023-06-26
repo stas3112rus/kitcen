@@ -32,6 +32,7 @@ drawHead($VALUES['description']);
 	drawAdvantages();
 	drawProductBlock();
 	drawSupport();
+	drawSteps();
 	?>
 </body>
 
