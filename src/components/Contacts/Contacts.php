@@ -39,7 +39,7 @@ function drawContacts()
 
 				<div class="Contacts-buttonsBlock">
 					<a>
-						<div class="Contacts-button" style="text-decoration: none;">
+						<div class="Contacts-button openPopup" style="text-decoration: none;">
 							<? echo $values['callBackButton'] ?>
 						</div>
 					</a>

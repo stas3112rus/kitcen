@@ -77,10 +77,10 @@ function drawProductButtons($product)
 	$productValue = getProductItemValues($product)['buttonsBlock'];
 ?>
 	<div class="Product-Buttons">
-		<div class="Product-Button Product-Button-Design">
+		<div class="Product-Button Product-Button-Design openPopup">
 			<? echo  $productValue['design'] ?>
 		</div>
-		<div class="Product-Button Product-Button-Credit">
+		<div class="Product-Button Product-Button-Credit openPopup">
 			<? echo  $productValue['credit'] ?>
 		</div>
 		<a href="<? echo getProductLink($product) ?>" class="Product-ButtonLink">

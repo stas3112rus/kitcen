@@ -27,18 +27,19 @@ drawHead($VALUES['description']);
 	<?
 	drawHeader();
 	drawNavBar();
-	// drawMainScreen();
-	// drawPopularCategories();
-	// drawAdvantages();
-	// drawProductBlock();
-	// drawSupport();
-	// drawSteps();
-	// drawGuarantees();
-	// drawDifference();
-	// drawQuestion();
+	drawMainScreen();
+	drawPopularCategories();
+	drawAdvantages();
+	drawProductBlock();
+	drawSupport();
+	drawSteps();
+	drawGuarantees();
+	drawDifference();
+	drawQuestion();
 	drawContacts();
 	drawFooter();
 	drawPopup();
+	drawScripts();
 	?>
 </body>
 

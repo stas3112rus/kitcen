@@ -1,50 +1,46 @@
-.Popup{
-	display: none;
-	position: fixed;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	color: #fff;
-	height: 100%;
-	z-index: 9999999999999999999999999;
-	width: 100%;
-	background: rgba(0,0,0,0.5);	
+.Popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  color: #fff;
+  height: 100%;
+  z-index: 9999999999999999999999999;
+  width: 100%;
+  background: rgb(0 0 0 / 50%);
 
-	&-content{
-		position: fixed;
-		padding: 2rem 2rem;
-		left: 50%;
-		top:10%;
-		//width: 20%;
-		min-width: 235px;
-		max-width: 450px;
-		transform: translateX(-50%);
-		background: #4a689a;
-	}
+  &-content {
+    position: fixed;
+    padding: 2rem;
+    left: 50%;
+    top: 10%;
+    //width: 20%;
+    min-width: 235px;
+    max-width: 450px;
+    transform: translateX(-50%);
+    background: #4a689a;
+  }
 
-	&-close{
-		position: absolute;
-		top:-1rem;
-		right: -2rem;
-		width: 2rem;
-		text-align: center;
-		border: none;
-		cursor: pointer;
-		background: transparent;
-		font-size: 1.3rem;
-		color: #fff;
-	}
+  &-close {
+    position: absolute;
+    top: -1rem;
+    right: -2rem;
+    width: 2rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    font-size: 1.3rem;
+    color: #fff;
+  }
 
-	&-title{
-		font-size: 26px;
-		text-transform: uppercase;
-		line-height: 40px;
-		font-family: SFUIDisplayBold;
+  &-title {
+    font-size: 26px;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-family: SFUIDisplayBold;
 
-		& span{
-			color: #000154;
-		}
-	}
-	
+    & span {
+      color: #000154;
+    }
+  }
 }
