@@ -26,7 +26,7 @@ drawHead($VALUES['description']);
 <body>
 	<?
 	drawHeader();
-	// drawNavBar();
+	drawNavBar();
 	// drawMainScreen();
 	// drawPopularCategories();
 	// drawAdvantages();
@@ -37,6 +37,7 @@ drawHead($VALUES['description']);
 	// drawDifference();
 	// drawQuestion();
 	drawContacts();
+	drawFooter();
 	?>
 </body>
 

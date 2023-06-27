@@ -1,23 +1,23 @@
 .Difference {
-  background: url("../image/dest.png") no-repeat;
-  background-size: cover;
   height: 50%;
   margin-top: 50px;
-  margin-left: -15px;
   margin-right: -8px;
+  margin-left: -15px;
   padding-top: 150px;
   padding-bottom: 140px;
   color: #000154;
+  background: url("../image/dest.png") no-repeat;
+  background-size: cover;
 
   & h3 {
     font-size: 200%;
   }
 
   &-number {
-    font-family: SFUIDisplayBold;
-    font-size: 57px;
     margin-right: 20px;
     color: #495560;
+    font-size: 57px;
+    font-family: SFUIDisplayBold;
   }
 
   &-block {
