@@ -64,6 +64,11 @@
 			font-size: 18px;
 		}
 
+		& img{
+			width: 14px;
+			height: 21px;
+		}
+
 	}
 
 	&-address {
@@ -92,8 +97,9 @@
 		text-align: center;
 		background-color: #eb2626;
 		box-shadow: 0 4px 9px 1px #69b878;	
-}
+	}
 
-
-
+	&-buttonsInfo{
+		margin-top: 15px;
+	}
 }
