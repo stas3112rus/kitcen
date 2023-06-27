@@ -4,3 +4,4 @@ include('Policy.php');
 include('QuestionForm.php');
 include('SupportForm.php');
 include('FormFields.php');
+include('PopupForm.php');
