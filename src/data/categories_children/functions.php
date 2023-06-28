@@ -14,11 +14,28 @@ function getPopularCategoriesChildren($limit)
 {
     $sql = "SELECT 
     *
-    FROM `categories_children`
+    FROM `categories_children`    
     ORDER BY rating DESC LIMIT 0, $limit
     ";
 
     return getAllRowsFromDataBase($sql);
+}
+
+function getCategoriesChildrenById($id)
+{
+    $sql = "SELECT 
+        categories_children.folder as folder,
+        categories_children.title as title,
+        categories_children.name_full as name_full,
+        categories_children.name_simple as name_simple,
+        categories_parents.folder as parents_folder,
+        categories_parents.name_full as parents_name_full
+    FROM `categories_children`
+    JOIN categories_parents ON categories_parents.id = category_parent_ref 
+    WHERE categories_children.id = '$id'
+    ";
+
+    return getOneRowFromDataBase($sql);
 }
 
 
