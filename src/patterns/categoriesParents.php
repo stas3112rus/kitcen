@@ -25,7 +25,7 @@ drawHead($VALUES['description']);
 <body>
 	<?
 	drawHeader();
-
+	drawMainTitle($CATEGORY['name_full']);
 	drawFooter();
 	drawPopup();
 	drawScripts();

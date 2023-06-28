@@ -17,6 +17,7 @@ include('Contacts/Contacts.php');
 include('Footer/Footer.php');
 include('Popup/Popup.php');
 include('Scripts/Scripts.php');
+include('MainTitle/MainTitle.php');
 
 
 
