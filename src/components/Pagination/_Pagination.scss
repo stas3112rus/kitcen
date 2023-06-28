@@ -1,0 +1,32 @@
+.Pagination {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+
+  & a {
+    text-decoration: none;
+    color: #495660;
+  }
+
+  &-item {
+    padding: 10px;
+    display: block;
+    border: 1px solid #000;
+    overflow: hidden;
+
+    &:hover {
+      background-color: #e8e3e3;
+      cursor: pointer;
+    }
+  }
+
+  &-active {
+    background-color: #7be988;
+
+    &:hover {
+      background-color: #7be988;
+    }
+  }
+}

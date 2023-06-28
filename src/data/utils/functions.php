@@ -18,6 +18,7 @@ function getOneRowFromDataBase($sql)
 	return $res->fetch_assoc();
 }
 
+
 function getAllRowsFromDataBase($sql)
 {
 	global $base;

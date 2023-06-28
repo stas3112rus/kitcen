@@ -1,54 +1,9 @@
 <?
-
-function getAllProductCategories()
+function getCountProductByCategoryId($categoryId)
 {
-	$sql = "SELECT 
-    *
-    FROM `product_categories_match`
+    $sql = "SELECT COUNT(product_ref)
+        FROM product_categories_match
+        WHERE category_child_ref = '$categoryId';
     ";
-
-	return getAllRowsFromDataBase($sql);
-}
-
-function getProductCategoriesByCategoryId()
-{
-	$sql = "SELECT 
-    *
-    FROM `product_categories_match`
-    ";
-
-	return getAllRowsFromDataBase($sql);
-}
-
-function getProductCategoriesByProductId()
-{
-	$sql = "SELECT 
-    *
-    FROM `product_categories_match`
-    ";
-
-	return getAllRowsFromDataBase($sql);
-}
-
-
-function addProductCategories($category_id, $product_id)
-{
-	$sql = "INSERT INTO `product_categories_match`
-        (            
-            `category_child_ref`,
-            `product_ref`           
-        ) 
-        VALUES 
-        (
-            '$category_id',
-            '$product_id'
-        )";		
-
-	return changeDataBaseRequest($sql, "Ошибка при добавлении категории в БД");
-}
-
-function deleteProductCategoriesById($id)
-{
-	$sql = "DELETE FROM `product_categories_match` WHERE `id` = '$id'";
-	return changeDataBaseRequest($sql, "Ошибка при добавлении категории в БД");
+    return getOneRowFromDataBase($sql)['COUNT(product_ref)'];
 }

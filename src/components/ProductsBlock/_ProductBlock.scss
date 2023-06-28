@@ -15,13 +15,13 @@
     &_active {
       color: #6680f1;
 
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
     }
   }
 
-  &-titleRight{
+  &-titleRight {
     margin-top: 10px;
     flex-direction: row;
     justify-content: right;

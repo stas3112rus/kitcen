@@ -36,6 +36,7 @@ drawHead($VALUES['description']);
 	drawMainTitle($CATEGORY['name_full']);
 	drawBreadCrumbs();
 	drawProductBlock($PAGE, $PER_PAGE, true, $CATEGORIES_CHILDREN_ID);
+	drawPagination($PAGE, $PER_PAGE, getCountProductByCategoryId($CATEGORIES_CHILDREN_ID));
 	drawFooter();
 	drawPopup();
 	drawScripts();

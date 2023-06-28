@@ -19,6 +19,7 @@ include('Popup/Popup.php');
 include('Scripts/Scripts.php');
 include('MainTitle/MainTitle.php');
 include('BreadCrumbs/BreadCrumbs.php');
+include('Pagination/Pagination.php');
 
 
 
