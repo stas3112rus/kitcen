@@ -10,18 +10,20 @@ function getAllProducts()
     return getAllRowsFromDataBase($sql);
 }
 
-function getProductsByParams($page, $perPage, $sort, $order)
+function getProductsByParams($page, $perPage, $sort, $order, $category_id = false)
 {
     $limit = getLimit($page, $perPage);
     $order = getOrder($sort, $order);
+    $where = $category_id ? "WHERE category_child_ref  = '$category_id'" : "";
 
     $sql = "SELECT 
     *
     FROM `products`
+    JOIN product_categories_match ON product_categories_match.product_ref = products.id
+    $where
     $order
     $limit
     ";
-
 
     return getAllRowsFromDataBase($sql);
 }
@@ -60,7 +62,7 @@ function addProductFromOldProduct($product)
             '$product[foto_o]',
             '$product[reiting]',            
             '$product[category]'
-        )";         
+        )";
 
     return changeDataBaseRequest($sql, "Ошибка при добавлении товара в БД");
 }

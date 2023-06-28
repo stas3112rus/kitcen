@@ -1,7 +1,7 @@
 <?
 include('constants/productBlock.constants.php');
 
-function drawProductBlock($page = 1, $perPage = 12)
+function drawProductBlock($page = 1, $perPage = 12, $title_right = false, $category_id = false)
 {
 	$sort = "rating";
 	$order = "Desc";
@@ -13,11 +13,11 @@ function drawProductBlock($page = 1, $perPage = 12)
 	<div class="container ProductBlock">
 		<div class="ProductBlock-Wrapper">
 			<?
-			drawProductBlockTitles($sort);
+			drawProductBlockTitles($sort, $title_right);
 			?>
 			<ul class="Products clearfix">
 				<?
-				foreach (getProductsByParams($page, $perPage, $sort, $order) as $product) {
+				foreach (getProductsByParams($page, $perPage, $sort, $order, $category_id) as $product) {
 					drawProductItem($product);
 				}
 				?>
@@ -27,11 +27,11 @@ function drawProductBlock($page = 1, $perPage = 12)
 <?
 }
 
-function drawProductBlockTitles($sort)
+function drawProductBlockTitles($sort, $title_right)
 {
 	$productsValues = getProductBlockValues();
 ?>
-	<div class="ProductBlock-Titles">
+	<div class="ProductBlock-Titles <? if ($title_right) echo "ProductBlock-titleRight" ?>">
 		<a href="?sort=hits" class="ProductBlock-Titles <? echo $sort !== "rating" ? "ProductBlock-Titles_active " : "" ?>">
 			<? echo $productsValues['hits'] ?>
 		</a>

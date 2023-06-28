@@ -13,8 +13,21 @@
     text-decoration: none;
 
     &_active {
-      color: blue;
+      color: #6680f1;
+
+      &:hover{
+        text-decoration: underline;
+      }
     }
+  }
+
+  &-titleRight{
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: right;
+    font-size: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
   }
 }
 

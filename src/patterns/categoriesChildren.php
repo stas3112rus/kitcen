@@ -12,7 +12,13 @@ include('constants/categoriesChildren.constants.php');
 $DEPARTMENT = getDepartmentWithCityByID($DEPARTMENT_ID);
 $CATEGORY = getCategoriesChildrenById($CATEGORIES_CHILDREN_ID);
 
+if ($_GET['page']) {
+	$PAGE = $_GET['page'];
+} else {
+	$PAGE = 1;
+}
 
+$PER_PAGE = 28;
 
 $VALUES = getCategoriesChildrenValues();
 ?>
@@ -29,8 +35,7 @@ drawHead($VALUES['description']);
 	drawHeader();
 	drawMainTitle($CATEGORY['name_full']);
 	drawBreadCrumbs();
-
-
+	drawProductBlock($PAGE, $PER_PAGE, true, $CATEGORIES_CHILDREN_ID);
 	drawFooter();
 	drawPopup();
 	drawScripts();
