@@ -1,0 +1,19 @@
+.BreadCrumbs {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  color: #e8e3e3;
+
+  & a {
+    color: #e8e3e3;
+    font-size: 95%;
+    text-decoration: none;
+
+    &:hover {
+      color: #785dff;
+      font-size: 95%;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+}
