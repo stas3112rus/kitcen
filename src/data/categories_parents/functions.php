@@ -21,6 +21,16 @@ function getCategoriesParentsByFolder($folder)
     return getOneRowFromDataBase($sql);
 }
 
+function getCategoriesParentsById($id)
+{
+    $sql = "SELECT 
+    *
+    FROM `categories_parents`
+    WHERE id = '$id'
+    ";
+    return getOneRowFromDataBase($sql);
+}
+
 
 
 function addCategoriesParentsFromOldCategory($category)

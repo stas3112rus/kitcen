@@ -1,17 +1,4 @@
 <?
-function getTXT()
-{
-    global $TEXT_TYPE;
-
-    $result = [];    
-
-    foreach (getGlobalTextsAndTypeText($TEXT_TYPE) as $text) {
-        $result[$text['name']] =  getTextLine($text['value']);
-    }
-
-    return $result;
-}
-
 function getTextLine($textLine)
 {
     $textLine = replacePadeg($textLine);

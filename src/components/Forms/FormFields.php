@@ -1,7 +1,6 @@
 <?
 function drawFormFields($messageField = false)
 {
-	global $VALUES;
 	$formFieldValue = getFormValues();
 ?>
 	<input type="text" name="name" placeholder="<? echo $formFieldValue['name'] ?>" required>
@@ -9,7 +8,7 @@ function drawFormFields($messageField = false)
 	<? if ($messageField) { ?>
 		<textarea rows="10" cols="45" name="message" placeholder="<? echo $formFieldValue['message'] ?>"></textarea>
 	<? } ?>
-	<input type="hidden" name="link" value="<? echo $VALUES['currentPage'] ?>">
+	<input type="hidden" name="link" value="<? echo getCurrentPage() ?>">
 
 <?
 }

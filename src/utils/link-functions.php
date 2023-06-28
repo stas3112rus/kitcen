@@ -14,3 +14,8 @@ function getLinkPage($path = "", $type = "main")
 			throw new ErrorException("не верный тип категории страницы");
 	}
 }
+
+function getCurrentPage()
+{
+	return (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+}
