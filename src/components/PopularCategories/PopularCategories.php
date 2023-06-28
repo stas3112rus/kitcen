@@ -1,15 +1,14 @@
 <?
-function drawPopularCategories()
+function drawPopularCategories($categories)
 {
-	global $LEVEL;
 ?>
 	<div class="container popularCategories">
 		<?
-		foreach (getPopularCategoriesChildren(30) as $category) {
+		foreach ($categories as $category) {
 		?>
-			<a href="<? echo "$LEVEL/categories/$category[folder]"  ?>" class="popularCategories-link">
+			<a href="<? echo getLinkPage($category['folder'], 'category') ?>" class="popularCategories-link">
 				<div class="popularCategories_item">
-					<?echo $category['name_full']?>
+					<? echo $category['name_full'] ?>
 				</div>
 			</a>
 		<? } ?>

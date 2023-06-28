@@ -27,7 +27,7 @@ drawHead($VALUES['description']);
 	drawHeader();
 	drawNavBar();
 	drawMainScreen();
-	drawPopularCategories();
+	drawPopularCategories(getPopularCategoriesChildren(30));
 	drawAdvantages();
 	drawProductBlock();
 	drawSupport();

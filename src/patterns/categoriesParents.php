@@ -27,6 +27,7 @@ drawHead($VALUES['description']);
 	drawHeader();
 	drawMainTitle($CATEGORY['name_full']);
 	drawBreadCrumbs();
+	drawPopularCategories(getCategoriesParents());
 	drawFooter();
 	drawPopup();
 	drawScripts();
