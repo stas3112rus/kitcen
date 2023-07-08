@@ -28,6 +28,17 @@ function getProductsByParams($page, $perPage, $sort, $order, $category_id = fals
     return getAllRowsFromDataBase($sql);
 }
 
+function getProductsById($product_id)
+{
+    $sql = "SELECT 
+    *
+    FROM `products`
+    WHERE id = '$product_id';
+    ";
+
+    return getOneRowFromDataBase($sql);
+}
+
 
 function addProductFromOldProduct($product)
 {

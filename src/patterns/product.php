@@ -6,34 +6,37 @@ include("$GLOBAL_PATH/src/components/bundle.php");
 include("$GLOBAL_PATH/src/constants/bundle.php");
 
 include("$GLOBAL_PATH/src/utils/bundle.php");
-include('constants/categoriesChildren.constants.php');
-include('utils/getCurrentPage.php');
-
+include('constants/product.constants.php');
 
 $DEPARTMENT = getDepartmentWithCityByID($DEPARTMENT_ID);
+$PRODUCT = getProductsById($PRODUCT_ID);
 $CATEGORY = getCategoriesChildrenById($CATEGORIES_CHILDREN_ID);
-$VALUES = getCategoriesChildrenValues();
-
-$PAGE = getCurrentGetPage();
-$PER_PAGE = $VALUES['per_page'];
 
 
+$VALUES = getProductValues();
+
+$drawProductPhotos = 'drawProductPhotos';
+$drawProductCharacteristics = 'drawProductCharacteristics';
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <?
-drawHead();
+drawHead(true);
 ?>
 
 <body>
 	<?
+
 	drawHeader();
-	drawMainTitle($CATEGORY['name_full']);
-	drawBreadCrumbs();
-	drawProductBlock($PAGE, $PER_PAGE, true, $CATEGORIES_CHILDREN_ID);
-	drawPagination($PAGE, $PER_PAGE, getCountProductByCategoryId($CATEGORIES_CHILDREN_ID));
+	drawProductTitle();
+	drawTwoColumnLayout(
+		$drawProductPhotos,
+		$drawProductCharacteristics
+	);
+
+
 	drawFooter();
 	drawPopup();
 	drawScripts();

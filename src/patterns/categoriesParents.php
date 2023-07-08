@@ -19,7 +19,7 @@ $VALUES = getCategoriesParentsValues($CATEGORY['name_full']);
 <html lang="en">
 
 <?
-drawHead($VALUES['description']);
+drawHead();
 ?>
 
 <body>

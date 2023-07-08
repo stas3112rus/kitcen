@@ -19,7 +19,7 @@ $VALUES = getMainValues();
 <html lang="en">
 
 <?
-drawHead($VALUES['description']);
+drawHead();
 ?>
 
 <body>

@@ -1,0 +1,39 @@
+.ProductCharacteristics {
+  &__price {
+    margin-top: 30px;
+  }
+
+  &__priceFor,
+  &__priceFrom,
+  &__currency {
+    color: grey;
+    font-size: 90%;
+  }
+
+  &__priceDigitals {
+    font-size: 200%;
+    font-weight: bold;
+  }
+
+  &__table {
+    margin-top: 30px;
+  }
+
+  &__row {
+    & td {
+      padding: 8px;
+      vertical-align: top;
+    }
+
+    &_2 {
+      background-color: #e0dbe6;
+    }
+
+    & span {
+      padding: 5px;
+      background-color: #dc2cdc;
+      color: white;
+      border-radius: 3px;
+    }
+  }
+}

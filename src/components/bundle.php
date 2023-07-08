@@ -20,6 +20,11 @@ include('Scripts/Scripts.php');
 include('MainTitle/MainTitle.php');
 include('BreadCrumbs/BreadCrumbs.php');
 include('Pagination/Pagination.php');
+include('ProductTitle/ProductTitle.php');
+include('TwoColumLayout/TwoColumnLayout.php');
+include('ProductPhotos/ProductPhotos.php');
+include('ProductCharacteristics/ProductCharacteristics.php');
+
 
 
 
