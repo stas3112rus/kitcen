@@ -9,7 +9,7 @@ function drawQuestion()
 			<h3>Остались вопросы?</h3>
 			<div class="Question-text" > Заполните форму и мы с вами свяжемся!</div>
 			<?
-			drawQuestionForm()
+			drawQuestionForm(false, false)
 			?>
 
 		</div>

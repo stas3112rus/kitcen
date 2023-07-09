@@ -1,19 +1,31 @@
 <?
-function drawQuestionForm()
+function drawQuestionForm($border = true, $yandexMap = true)
 {
 	global $PAGES;
 	$questionFormValue = getFormValues();
 ?>
-	<form action="<? echo $PAGES['mailSupport'] ?>" method="post" class="QuestionForm">
-		<div class="QuestionForm-wrapper">
-			<? drawFormFields(true) ?>
+	<div>
+		<form action="<? echo $PAGES['mailSupport'] ?>" method="post" class="
+		QuestionForm 
+		<? echo $border ? "QuestionForm_border" : "" ?>">
+			<div class="QuestionForm-wrapper">
+				<? drawFormFields(true) ?>
+			</div>
+			<button class="QuestionForm-button" style="margin-right: 20px;"><? echo $questionFormValue['button'] ?></button>
+		</form>
+
+
+		<div class="QuestionForm-info">
+			<? drawPolicy() ?>
 		</div>
-		<button class="QuestionForm-button" style="margin-right: 20px;"><? echo $questionFormValue['button'] ?></button>
-	</form>
 
+		<?
+		if ($yandexMap) {
+			drawYandexMap();
+		}
 
-	<div class="QuestionForm-info" style="">
-		<? drawPolicy() ?>
+		?>
 	</div>
+
 <?
 }

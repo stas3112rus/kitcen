@@ -25,6 +25,8 @@ include('TwoColumLayout/TwoColumnLayout.php');
 include('ProductPhotos/ProductPhotos.php');
 include('ProductCharacteristics/ProductCharacteristics.php');
 include('ProductDescription/ProductDescription.php');
+include('Requisites/Requisites.php');
+include('YandexMap/YandexMap.php');
 
 
 

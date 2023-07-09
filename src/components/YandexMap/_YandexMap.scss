@@ -1,0 +1,9 @@
+.YandexMap {
+  margin-top: 30px;
+  height: 450px;
+  max-width: 450px;
+
+  & img {
+    max-width: 100%;
+  }
+}

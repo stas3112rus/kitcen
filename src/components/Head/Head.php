@@ -1,5 +1,5 @@
 <?
-function drawHead($fotorama = 'false')
+function drawHead($fotorama = false)
 {
 	global $IMAGES, $LEVEL, $VALUES;
 ?>

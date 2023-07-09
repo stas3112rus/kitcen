@@ -7,6 +7,12 @@
     border-radius: 5px;
   }
 
+  &_border {
+    & input {
+      border: 1px solid #9b8b8b;
+    }
+  }
+
   &-wrapper {
     margin-top: 25px;
   }
