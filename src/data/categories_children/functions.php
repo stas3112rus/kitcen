@@ -21,6 +21,18 @@ function getPopularCategoriesChildren($limit)
     return getAllRowsFromDataBase($sql);
 }
 
+function getCategoriesChildrenByParentId($parentId)
+{
+    $sql = "SELECT 
+    *
+    FROM `categories_children`
+    WHERE category_parent_ref  = '$parentId'   
+    ORDER BY rating DESC
+    ";
+
+    return getAllRowsFromDataBase($sql);
+}
+
 function getCategoriesChildrenById($id)
 {
     $sql = "SELECT 
@@ -37,6 +49,8 @@ function getCategoriesChildrenById($id)
 
     return getOneRowFromDataBase($sql);
 }
+
+
 
 
 function addCategoriesChildrenFromOldCategory($category)

@@ -1,13 +1,16 @@
 .popularCategories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
   margin-top: 91px;
-  font-size: 15px;
 
-  & h3 {
-    color: #4a689a;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+
+    & h3 {
+      color: #4a689a;
+    }
   }
 
   &-link {
@@ -30,5 +33,9 @@
     &:hover {
       background: #29b3d9;
     }
+  }
+
+  &__title {
+    text-align: center;
   }
 }

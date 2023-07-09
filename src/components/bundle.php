@@ -24,6 +24,7 @@ include('ProductTitle/ProductTitle.php');
 include('TwoColumLayout/TwoColumnLayout.php');
 include('ProductPhotos/ProductPhotos.php');
 include('ProductCharacteristics/ProductCharacteristics.php');
+include('ProductDescription/ProductDescription.php');
 
 
 

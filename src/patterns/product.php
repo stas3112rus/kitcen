@@ -15,8 +15,6 @@ $CATEGORY = getCategoriesChildrenById($CATEGORIES_CHILDREN_ID);
 
 $VALUES = getProductValues();
 
-$drawProductPhotos = 'drawProductPhotos';
-$drawProductCharacteristics = 'drawProductCharacteristics';
 ?>
 
 <!DOCTYPE html>
@@ -30,12 +28,14 @@ drawHead(true);
 	<?
 
 	drawHeader();
+	drawNavBar();
 	drawProductTitle();
 	drawTwoColumnLayout(
-		$drawProductPhotos,
-		$drawProductCharacteristics
+		'drawProductPhotos',
+		'drawProductCharacteristics'
 	);
-
+	drawProductDescription();
+	drawPopularCategories(getCategoriesChildrenByProductId($PRODUCT_ID), $VALUES['categories']['title']);
 
 	drawFooter();
 	drawPopup();
