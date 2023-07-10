@@ -27,6 +27,7 @@ include('ProductCharacteristics/ProductCharacteristics.php');
 include('ProductDescription/ProductDescription.php');
 include('Requisites/Requisites.php');
 include('YandexMap/YandexMap.php');
+include('SitemapList/SitemapList.php');
 
 
 

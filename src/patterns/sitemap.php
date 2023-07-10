@@ -1,18 +1,17 @@
 <?
-$LEVEL = "";
+$LEVEL = "../";
 
 include("$GLOBAL_PATH/src/data/mysql.php");
 include("$GLOBAL_PATH/src/components/bundle.php");
 include("$GLOBAL_PATH/src/constants/bundle.php");
 
 include("$GLOBAL_PATH/src/utils/bundle.php");
-include('constants/main.constants.php');
+include('constants/sitemap.constants.php');
 
-$CATEGORY = getCategoriesParentsByFolder('main');
 
 $DEPARTMENT = getDepartmentWithCityByID($DEPARTMENT_ID);
 
-$VALUES = getMainValues();
+$VALUES = getSitemapValues();
 ?>
 
 <!DOCTYPE html>
@@ -26,16 +25,13 @@ drawHead();
 	<?
 	drawHeader();
 	drawNavBar();
-	drawMainScreen();
-	drawPopularCategories(getPopularCategoriesChildren(30));
-	drawAdvantages();
-	drawProductBlock();
-	drawSupport();
-	drawSteps();
-	drawGuarantees();
-	drawDifference();
-	drawQuestion();
-	drawContacts();
+
+	drawMainTitle($VALUES['title']);
+	drawBreadCrumbs();
+
+	drawSitemapList();
+
+
 	drawFooter();
 	drawPopup();
 	drawScripts();
