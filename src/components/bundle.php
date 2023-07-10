@@ -28,6 +28,8 @@ include('ProductDescription/ProductDescription.php');
 include('Requisites/Requisites.php');
 include('YandexMap/YandexMap.php');
 include('SitemapList/SitemapList.php');
+include('MailThankYou/MailThankYou.php');
+
 
 
 
