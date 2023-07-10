@@ -29,7 +29,7 @@ drawHead();
 	drawNavBar();
 	drawMainTitle($VALUES['title']);
 	drawBreadCrumbs();
-	drawMailThankYou();
+	drawParagraph($VALUES['data']['text-thank-you']);
 
 	drawFooter();
 	drawPopup();
