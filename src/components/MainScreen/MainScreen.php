@@ -15,8 +15,8 @@ function drawMainScreen()
 			<div class="home-p">
 				<? echo $mainScreenValues['text'] ?>
 			</div>
-			<div class="home-button openPopup">
-				<a >
+			<div class="home-button">
+				<a href="#mc_0" class="home-buttonLink">
 					<? echo $mainScreenValues['button'] ?>
 				</a>
 			</div>

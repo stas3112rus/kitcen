@@ -31,8 +31,10 @@ function drawHeader()
 					<? echo $DEPARTMENT['work_time'] ?>
 				</div>
 			</div>
-			<div class="col-xl-2 col-lg-2 header-contact openPopup">
-				<? echo $headerValues['button'] ?>
+			<div class="col-xl-2 col-lg-2 header-contact">
+				<a href="#mc_0" class="header-buttonLink">
+					<? echo $headerValues['button'] ?>
+				</a>
 			</div>
 		</div>
 	</div>

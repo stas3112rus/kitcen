@@ -1,0 +1,63 @@
+.home {
+  height: 50%;
+  margin-right: -8px;
+  margin-left: -15px;
+  padding-top: 150px;
+  padding-bottom: 140px;
+  color: #fff;
+  background: url("../image/home.png") no-repeat;
+  background-size: cover;
+}
+.home-text {
+  font-weight: bolder;
+  font-size: 48px;
+  font-family: SFUIDisplayBold;
+  line-height: 70px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.home span {
+  color: #000154;
+}
+.home-p {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+.home-button {
+  max-width: 350px;
+  margin: 30px auto;
+  margin-top: 30px;
+  padding: 13px 25px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #f21010;
+  border-radius: 5px;
+  box-shadow: 0 4px 9px 1px #783636;
+  cursor: pointer;
+}
+.home-button:hover {
+  background-color: #ef5c5c;
+}
+.home-buttonLink {
+  color: #fff;
+  text-decoration: none;
+}
+.home-small {
+  margin-top: 26px;
+  color: #e8e3e3;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .home-text {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
