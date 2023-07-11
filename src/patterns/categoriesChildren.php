@@ -30,6 +30,7 @@ drawHead();
 <body>
 	<?
 	drawHeader();
+	drawNavBar();
 	drawMainTitle($CATEGORY['name_full']);
 	drawBreadCrumbs();
 	drawProductBlock($PAGE, $PER_PAGE, true, $CATEGORIES_CHILDREN_ID);

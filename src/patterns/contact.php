@@ -1,5 +1,5 @@
 <?
-$LEVEL = "";
+$LEVEL = "../";
 
 include("$GLOBAL_PATH/src/data/mysql.php");
 include("$GLOBAL_PATH/src/components/bundle.php");
