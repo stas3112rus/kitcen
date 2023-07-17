@@ -19,6 +19,24 @@ function getCategoriesChildrenByProductId($productId)
     WHERE product_categories_match.product_ref  = '$productId'
     ORDER BY categories_children.rating DESC
     ";
-    
+
+    return getAllRowsFromDataBase($sql);
+}
+
+function getProductsByCategoryId($page, $perPage, $sort, $order, $category_id)
+{
+    $limit = getLimit($page, $perPage);
+    $order = getOrder($sort, $order);
+  
+
+    $sql = "SELECT 
+    *
+    FROM `product_categories_match`
+    JOIN products ON  products.id = product_categories_match.product_ref
+    WHERE category_child_ref = '$category_id'
+    $order
+    $limit
+    ";
+
     return getAllRowsFromDataBase($sql);
 }

@@ -10,17 +10,15 @@ function getAllProducts()
     return getAllRowsFromDataBase($sql);
 }
 
-function getProductsByParams($page, $perPage, $sort, $order, $category_id = false)
+function getProductsByParams($page, $perPage, $sort, $order)
 {
     $limit = getLimit($page, $perPage);
     $order = getOrder($sort, $order);
-    $where = $category_id ? "WHERE category_child_ref  = '$category_id'" : "";
 
     $sql = "SELECT 
     *
     FROM `products`
-    JOIN product_categories_match ON product_categories_match.product_ref = products.id
-    $where
+   
     $order
     $limit
     ";

@@ -17,9 +17,18 @@ function drawProductBlock($page = 1, $perPage = 12, $title_right = false, $categ
 			?>
 			<ul class="Products clearfix">
 				<?
-				foreach (getProductsByParams($page, $perPage, $sort, $order, $category_id) as $product) {
+
+				if ($category_id) {
+					$products = getProductsByCategoryId($page, $perPage, $sort, $order, $category_id);
+				} else {
+					$products = getProductsByParams($page, $perPage, $sort, $order);
+				}
+
+				foreach ($products as $product) {
 					drawProductItem($product);
 				}
+
+
 				?>
 			</ul>
 		</div>

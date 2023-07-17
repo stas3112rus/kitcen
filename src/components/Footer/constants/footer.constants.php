@@ -14,17 +14,14 @@ function getFooterValue()
 			"Кухни от производителя" => getLinkPage("kuhni-ot-proizvoditelja", "category"),
 			"Каталог мебели для кухни" => getLinkPage("mebel-dlja-kuhni", "category"),
 			"Индивидуальные кухни под ключ" => getLinkPage("kuhni-pod-kljuch", "category"),
-			"Замена фасадов" => getLinkPage("zamena-kuchonnich-fasadov.php", "category"),
 			"Кухни со встроенной техникой" => getLinkPage("vstroennye-kuhni", "category"),
 			"Готовые кухни" => getLinkPage("gotovye-kuhni", "category"),
-			"Кухни с барной стойкой" => getLinkPage("kuhni-s-barnoj-stojokoj", "category")
 		],
 		"columnThird" => [
 			"Выставочные образцы кухонь" => getLinkPage("vysvochnye-obrazi-kuhni", "category"),
-			"Распродажа кухонь" => getLinkPage("rasprodazha-kuhon", "category"),
-			"Акции и скидки на кухни" => getLinkPage("akcii-na-kuhni", "category"),
 			"Кухни из массива дерева" => getLinkPage("uhni-iz-massiva", "category"),
 			"Гарантии" => getLinkPage("kuhni-iz-massiva", "category"),
+			"Кухни с барной стойкой" => getLinkPage("kuhni-s-barnoj-stojokoj", "category"),
 			"Карта сайта" => getLinkPage("maps.php", "main"),
 			"Контакты офиса" => $PAGES['contact'],
 		],
